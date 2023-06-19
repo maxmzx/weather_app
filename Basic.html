@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F6F7F9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #city-input {
+            padding: 10px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px 0 0 5px;
+        }
+
+        #search-btn {
+            padding: 10px 20px;
+            background-color: #333333;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .weather-container {
+            margin-top: 40px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        #city-name {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333333;
+        }
+
+        #weather-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .weather-info-item {
+            text-align: center;
+        }
+
+        #weather-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        #temperature {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        #weather-description {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        #humidity {
+            font-size: 14px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="weather-container">
+            <h2 id="city-name">City</h2>
+            <div id="weather-info">
+                <div class="weather-info-item">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <p id="temperature">Temperature</p>
+                </div>
+                <div class="weather-info-item">
+                    <p id="weather-description">Weather Description</p>
+                    <p id="humidity">Humidity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
